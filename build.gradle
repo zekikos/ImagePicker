@@ -23,11 +23,6 @@ allprojects {
         jcenter()
     }
 
-    detekt {
-        config = files("${project.rootDir}/detekt.yml")
-        parallel = true
-    }
-
     // Avoid Kotlin docs error
     tasks.withType(Javadoc) {
         enabled = false
